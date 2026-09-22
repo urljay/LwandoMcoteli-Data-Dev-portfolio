@@ -14,6 +14,7 @@ HTML5 <canvas> for the animated hero circuit-particle background
 Native DOM APIs for the mode switch (Dev/Accounting), mobile menu, scroll-spy navigation, and project filtering
 Google Fonts — Space Grotesk, Inter, IBM Plex Mono
 Hosting — static site, deployed via GitHub Pages
+
 Project Structure
 ├── index.html      # Markup — all sections (hero, projects, skills, academic, community, affiliates, hobbies, about, contact)
 ├── style.css       # All styling, including CSS variables, animations, and responsive rules

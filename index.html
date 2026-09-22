@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lwando Mcoteli — Software Developer & Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<header class="nav">
+  <a href="#" class="logo">Lwando Mcoteli<span>.</span></a>
+  <div class="nav-right">
+    <nav class="links" id="nav-links">
+      <a href="https://REPLACE-with-your-main-site.com">Home</a>
+      <a href="#projects" data-sec="projects" id="nav-link-projects">Projects</a>
+      <a href="#skills" data-sec="skills">Skills</a>
+      <a href="#academic" data-sec="academic">Academic</a>
+      <a href="#responsibility" data-sec="responsibility">Community</a>
+      <a href="#affiliates" data-sec="affiliates">Affiliates</a>
+      <a href="#about" data-sec="about">About</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+    </nav>
+    <div class="mode-switch" id="mode-switch">
+      <div class="mode-switch-thumb" id="mode-switch-thumb"></div>
+      <button data-mode="tech" class="active" id="mode-btn-tech">Dev &amp; Data</button>
+      <button data-mode="finance" id="mode-btn-finance">Accounting</button>
+    </div>
+    <a href="#contact" class="btn btn-outline magnetic" style="padding:10px 20px;">Get in touch</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle">Menu</button>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mode-switch" id="mode-switch-mobile">
+    <div class="mode-switch-thumb" id="mode-switch-thumb-mobile"></div>
+    <button data-mode="tech" class="active" id="mode-btn-tech-mobile">Dev &amp; Data</button>
+    <button data-mode="finance" id="mode-btn-finance-mobile">Accounting</button>
+  </div>
+  <a href="https://REPLACE-with-your-main-site.com">Home</a>
+  <a href="#projects" id="nav-link-projects-mobile">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#academic">Academic</a>
+  <a href="#responsibility">Community</a>
+  <a href="#affiliates">Affiliates</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="hero-canvas"></canvas>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow hero-eyebrow" id="hero-eyebrow">Software Developer · Data Analyst</div>
+      <h1 class="hero-name" id="hero-name">Turning data and code into <span class="grad">systems that ship.</span></h1>
+      <p class="hero-role" id="hero-role">Lwando Mcoteli — software developer and data analyst with a 9-year background in financial markets. I build full-stack platforms, analytics dashboards, and the data pipelines behind them, with an operator's bias for things that hold up in production.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-solid magnetic" id="hero-view-btn">View projects</a>
+        <a href="#" class="btn btn-outline magnetic" id="resume-btn">Download résumé</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img id="hero-photo-img" src="" alt="Lwando Mcoteli">
+    </div>
+  </div>
+  <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="stats-grid" id="stats-grid"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" id="projects-eyebrow">Selected Work</div>
+      <h2 class="glow-heading split-hover" data-split id="projects-heading">Projects across software development and data.</h2>
+      <p id="projects-sub">Filter by discipline. Click any card for the full case study, stack, and links.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="project-grid" id="project-grid"></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" id="skills-eyebrow">Stack</div>
+      <h2 class="glow-heading split-hover" data-split id="skills-heading">Tools I build with day to day.</h2>
+    </div>
+    <div class="skill-groups" id="skill-groups"></div>
+  </div>
+</section>
+
+<!-- ACADEMIC -->
+<section class="academic" id="academic">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Certifications</div>
+      <h2 class="glow-heading split-hover" data-split>Formal education and certified learning.</h2>
+    </div>
+    <div class="info-groups">
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>freeCodeCamp</h3>
+        <ul>
+          <li>Full Stack Development Certification</li>
+          <li>Data Visualization Certification</li>
+          <li>Data Analysis Certification</li>
+          <li>JavaScript Algorithms &amp; Data Structures Certification</li>
+          <li>Responsive Web Design Certification</li>
+        </ul>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>Professional Certifications</h3>
+        <ul>
+          <li>Project Management Certificate — University of Cape Town (UCT)</li>
+          <li>Financial Accounting Diploma (NQF Level 6) — IQB &amp; ICB</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL RESPONSIBILITY -->
+<section class="responsibility" id="responsibility">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Community</div>
+      <h2 class="glow-heading split-hover" data-split>Social responsibility outside the day job.</h2>
+    </div>
+    <div class="info-groups">
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>Teens Camps</h3>
+        <p class="info-desc">Youth support at teens camps.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>Drug Addiction Activism</h3>
+        <p class="info-desc">Activism talks on drug addiction at high schools and institutions.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>Youth Quake</h3>
+        <p class="info-desc">Educational tours on career guidance, and the Lean on Me programmes.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="info-photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-4 3-3-2-5 4"/></svg>
+          <span>Photo placeholder</span>
+        </div>
+        <h3>Trivium Algorithm Research</h3>
+        <p class="info-desc">Algorithm research initiative.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<!-- AFFILIATES -->
+<section class="affiliates" id="affiliates">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Trusted Partners</div>
+      <h2 class="glow-heading split-hover" data-split>Affiliate Partners.</h2>
+      <p>Platforms I use in my own trading and business operations. Some links below are affiliate links — signing up through them may earn me a commission at no extra cost to you.</p>
+    </div>
+    <div class="affiliate-grid">
+      <a href="https://REPLACE-with-cfi-trade-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-cfi-trade-logo-url.png" alt="CFI Trade logo" loading="lazy"></div>
+        <h3>CFI Trade</h3>
+        <p>Regulated multi-asset broker for forex, indices, commodities and shares.</p>
+        <span class="affiliate-cta">Visit CFI Trade ↗</span>
+      </a>
+      <a href="https://www.bridgement.co" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-bridgement-logo-url.png" alt="Bridgement logo" loading="lazy"></div>
+        <h3>Bridgement</h3>
+        <p>Working capital and invoice finance for growing African businesses.</p>
+        <span class="affiliate-cta">Visit Bridgement ↗</span>
+      </a>
+      <a href="https://REPLACE-with-exness-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-exness-logo-url.png" alt="Exness logo" loading="lazy"></div>
+        <h3>Exness</h3>
+        <p>Low-spread forex and CFD broker with fast, reliable withdrawals.</p>
+        <span class="affiliate-cta">Visit Exness ↗</span>
+      </a>
+      <a href="https://REPLACE-with-wise-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-wise-logo-url.png" alt="Wise logo" loading="lazy"></div>
+        <h3>Wise</h3>
+        <p>Fast, low-fee international transfers and multi-currency accounts.</p>
+        <span class="affiliate-cta">Visit Wise ↗</span>
+      </a>
+      <a href="https://REPLACE-with-kinesis-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-kinesis-logo-url.png" alt="Kinesis Money logo" loading="lazy"></div>
+        <h3>Kinesis Money</h3>
+        <p>Physical gold and silver-backed digital currency, with holding yield.</p>
+        <span class="affiliate-cta">Visit Kinesis Money ↗</span>
+      </a>
+      <a href="https://REPLACE-with-xm-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-xm-logo-url.png" alt="XM.com logo" loading="lazy"></div>
+        <h3>XM.com</h3>
+        <p>Regulated forex and CFD broker with tight spreads and fast execution.</p>
+        <span class="affiliate-cta">Visit XM.com ↗</span>
+      </a>
+      <a href="https://REPLACE-with-binance-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-binance-logo-url.png" alt="Binance logo" loading="lazy"></div>
+        <h3>Binance</h3>
+        <p>World's largest crypto exchange for spot, futures and staking.</p>
+        <span class="affiliate-cta">Visit Binance ↗</span>
+      </a>
+      <a href="https://REPLACE-with-etoro-affiliate-link.com" class="affiliate-card reveal" target="_blank" rel="noopener sponsored">
+        <div class="affiliate-logo"><img src="REPLACE-with-etoro-logo-url.png" alt="eToro logo" loading="lazy"></div>
+        <h3>eToro</h3>
+        <p>Social trading platform for stocks, crypto and copy trading.</p>
+        <span class="affiliate-cta">Visit eToro ↗</span>
+      </a>
+    </div>
+    <p class="affiliate-disclaimer">Disclosure: some links above are affiliate links. I may earn a commission if you sign up through them, at no extra cost to you.</p>
+  </div>
+</section>
+
+<section class="hobbies" id="hobbies">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Off the Clock</div>
+      <h2 class="glow-heading split-hover" data-split>Hobbies.</h2>
+    </div>
+    <div class="info-groups">
+      <div class="info-card reveal">
+        <h3>Social Tennis &amp; Golf</h3>
+        <p class="info-desc">Playing social tennis and golf.</p>
+      </div>
+      <div class="info-card reveal">
+        <h3>Social Hiking</h3>
+        <p class="info-desc">Social hiking.</p>
+      </div>
+      <div class="info-card reveal">
+        <h3>Music Production</h3>
+        <p class="info-desc">Music production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="wrap about-grid">
+    <div class="about-portrait reveal">PORTRAIT / PRODUCT SHOT</div>
+    <div class="about-body reveal">
+      <div class="eyebrow" id="about-eyebrow">About</div>
+      <h2 class="glow-heading split-hover" data-split id="about-heading" style="margin-top:16px;font-size:clamp(26px,3.4vw,36px);">Grounded in trading systems, applied to software.</h2>
+      <p id="about-p1">Based in East London, South Africa. My background is 9 years in algorithmic trading and financial markets, which is where the engineering habits come from: version everything, measure everything, and assume the system will be tested under pressure.</p>
+      <p id="about-p2">I now apply that to full-stack development and data analytics — building dashboards, backend services, and the pipelines that feed them, across fintech, insurance, and consumer platforms.</p>
+      <div class="about-links">
+        <a href="#" class="btn btn-outline magnetic">GitHub ↗</a>
+        <a href="https://linkedin.com/in/REPLACE" class="btn btn-outline magnetic" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="section-blob"><span class="b1"></span><span class="b2"></span></div>
+  <div class="cta-inner reveal">
+    <div class="eyebrow" style="justify-content:center;" id="cta-eyebrow">Let's Talk</div>
+    <h2 class="glow-heading split-hover" data-split id="cta-heading">Hiring for software dev or data roles?</h2>
+    <p id="cta-text">I'm open to opportunities in software development and data analysis — send over the role and I'll reply directly.</p>
+    <div class="hero-actions">
+      <a href="mailto:hello@example.com" class="btn btn-solid magnetic">Email me</a>
+      <a href="#" class="btn btn-outline magnetic" id="resume-btn-2">Download résumé</a>
+    </div>
+    <div class="social-row" style="justify-content:center;margin-top:36px;">
+      <a href="https://wa.me/27REPLACE" class="social-icon" target="_blank" rel="noopener" title="WhatsApp"><span>WA</span></a>
+      <a href="https://instagram.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Instagram"><span>IG</span></a>
+      <a href="https://facebook.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Facebook"><span>FB</span></a>
+      <a href="https://linkedin.com/in/REPLACE" class="social-icon" target="_blank" rel="noopener" title="LinkedIn"><span>IN</span></a>
+      <a href="https://twitter.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Twitter / X"><span>X</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="section-blob"><span class="b1" style="width:220px;height:220px;"></span><span class="b2" style="width:220px;height:220px;"></span></div>
+  <div class="footer-row">
+    <div class="footer-copy">© 2026 Lwando Mcoteli</div>
+    <div class="footer-links">
+      <a href="#projects" id="footer-link-projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#academic">Academic</a>
+      <a href="#responsibility">Community</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-row">
+      <a href="https://wa.me/27REPLACE" class="social-icon" target="_blank" rel="noopener" title="WhatsApp"><span>WA</span></a>
+      <a href="https://instagram.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Instagram"><span>IG</span></a>
+      <a href="https://facebook.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Facebook"><span>FB</span></a>
+      <a href="https://linkedin.com/in/REPLACE" class="social-icon" target="_blank" rel="noopener" title="LinkedIn"><span>IN</span></a>
+      <a href="https://twitter.com/REPLACE" class="social-icon" target="_blank" rel="noopener" title="Twitter / X"><span>X</span></a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/27REPLACE" class="whatsapp-float" target="_blank" rel="noopener" title="Chat on WhatsApp">WA</a>
+<button class="to-top" id="to-top">↑</button>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">Close ✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
